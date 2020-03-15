@@ -22,16 +22,16 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    @Html.ActionLink("Inicio", "", "", null, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    @Html.ActionLink("¿Cómo funciona?", "About", "Home", null, new { @class = "nav-link" })
+                    @Html.ActionLink("¿Cómo funciona?", "HowItWorks", "Home", null, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
                     @Html.ActionLink("Iniciar sesión", "About", "Home", null, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    @Html.ActionLink("Registro Nuevo Restaurante", "Administrador", "Nuevo", null, new { @class = "nav-link" })
+                    @Html.ActionLink("Registro Nuevo Restaurante", "Register", "Account", null, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Registro de usuarios internos</a>
@@ -39,17 +39,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Solicita cambios o mejoras</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">¿Cómo funciona?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
+                <!--
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>-->
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <!--
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+        -->
         </div>
     </nav>
     

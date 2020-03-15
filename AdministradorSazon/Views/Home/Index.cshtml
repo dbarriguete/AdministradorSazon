@@ -3,29 +3,33 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Administrador de Sazón</h1>
+    <p class="lead">Sistema para la gestión de órdenes dentro de un restaurante, permite levantar la orden de un comensal, enviarla a generar a la sección de cocina, la confirmación de la misma y posteriormente la actualización para conocer el status de dicha orden.</p>
+    <p>
+        @Html.ActionLink("Conoce más...", "HowItWorks", "Home", null, new { @class = "btn btn-primary btn-lg" })
+    </p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Registrate</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Con tu correo electrónico proporciona el password que tu quieras utilizar e inicia la configuración de los datos de tu restaurante.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p>
+            @Html.ActionLink("Registro", "Register", "Account", null, new { @class = "btn btn-success " })
+        </p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Registra tu negocio</h2>
+        <p>Proporciona la información de tu negocio, sucursales, mesas, servicios, platillos, tipos de cobro, promociones.</p>
+        <p>
+            @Html.ActionLink("Registra tu negocio", "Register", "Account", null, new { @class = "btn btn-info" })
+        </p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Registra tus ventas</h2>
+        <p>Recibes tus ordenes por medio de Administrador de Sazón y comienza a dividir las cuentas de tus comensales, aplicar promociones, recibir pagos parciales por consumo y ve midiendo en tiempo real las ventas se han registrado.</p>
+        <p>@Html.ActionLink("Inicia tus ventas", "Register", "Account", null, new { @class = "btn btn-info" })</p>
     </div>
 </div>
